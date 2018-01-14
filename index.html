@@ -1,0 +1,32 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" dir="ltr" lang="es-ES">
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+        <title>Prueba de puzzle con mootools</title>
+        <style type="text/css">
+            html, body {
+                margin: 0;
+                padding: 0;
+            }
+            body {
+                background: beige;
+            }
+            #contenido {
+            }
+        </style>
+
+        <script type="text/javascript" src="mootools.js"></script>
+        <script type="text/javascript" src="puzzle.js"></script>
+        <script type="text/javascript">
+            // domready
+            window.addEvent("domready", function() {
+                // creo el objeto juego, el cual se encarga de crear la capa tablero, las piezas, la capa acciones y los botones
+                var juego = new Juego("contenido");
+            })
+        </script>
+    </head>
+    <body>
+        <div id="contenido">
+        </div>
+    </body>
+</html>
